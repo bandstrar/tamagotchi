@@ -1,7 +1,7 @@
 const valueData = [
   {
     name: 'eat',
-    full: 100,
+    value: 100,
     button1: 10,
     button2: -3,
     button1Name: 'Healthy Food',
@@ -9,7 +9,7 @@ const valueData = [
   },
   {
     name: 'play',
-    fun: 50,
+    value: 50,
     button1: 50,
     button2: 2,
     button1Name: 'Go Skydiving!',
@@ -17,7 +17,7 @@ const valueData = [
   },
   {
     name: 'fight',
-    strength: 100,
+    value: 100,
     button1: 1,
     button2: -10,
     button1Name: 'Run Away!',
@@ -25,7 +25,7 @@ const valueData = [
   },
   {
     name: 'sleep',
-    energy: 50,
+    value: 50,
     button1: 50,
     button2: 60,
     button1Name: 'Take a Nap',
