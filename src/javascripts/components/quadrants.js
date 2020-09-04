@@ -3,25 +3,11 @@ import data from '../data/data';
 const printToDom = () => {
   data.valueData.forEach((quadrant) => {
     const firstCaseUpper = quadrant.name.charAt(0).toUpperCase() + quadrant.name.slice(1);
-    let numberValue = 0;
-    const numberValueFunction = () => {
-      if (quadrant.name === 'eat') {
-        numberValue = quadrant.full;
-      } else if (quadrant.name === 'play') {
-        numberValue = quadrant.fun;
-      } else if (quadrant.name === 'fight') {
-        numberValue = quadrant.strength;
-      } else {
-        numberValue = quadrant.energy;
-      }
-    };
-
-    numberValueFunction();
 
     $(`#${quadrant.name}`).html(
       `<div id="${quadrant.name}Container" class="container ${quadrant.name}-container">
         <h2 id="${quadrant.name}Name" class="header ${quadrant.name}-header">${firstCaseUpper}</h2>
-        <div id="${quadrant.name}Number" class="number-value">${numberValue}</div>
+        <div id="${quadrant.name}Number" class="number-value">${quadrant.value}</div>
         <div id="${quadrant.name}ButtonContainer">
             <button type="button" id="${quadrant.name}Button1" class="button ${quadrant.name}-button">${quadrant.button1Name}</button>
             <button type="button" id="${quadrant.name}Button2" class="button ${quadrant.name}-button">${quadrant.button2Name}</button>
