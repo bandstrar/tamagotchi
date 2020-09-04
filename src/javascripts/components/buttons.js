@@ -1,18 +1,17 @@
 import data from '../data/data';
-import quadrants from './quadrants';
 
 const buttonFunctions = () => {
-  data.valueData.forEach((quadrant, i) => {
+  data.valueData.forEach((quadrant) => {
     const findId = data.valueData.indexOf(quadrant);
 
-    $(`#${quadrant.name}-${i}Button1`).on('click', () => {
+    $(`#${quadrant.name}Button1`).on('click', () => {
       data.valueData[findId].value += data.valueData[findId].button1;
-      quadrants.printToDom();
+      $(`#${quadrant.name}Number`).html(`${quadrant.value}`);
     });
 
-    $(`#${quadrant.name}-${i}Button2`).on('click', () => {
+    $(`#${quadrant.name}Button2`).on('click', () => {
       data.valueData[findId].value += data.valueData[findId].button2;
-      quadrants.printToDom();
+      $(`#${quadrant.name}Number`).html(`${quadrant.value}`);
     });
   });
 };
