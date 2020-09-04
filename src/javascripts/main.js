@@ -1,8 +1,9 @@
+import quadrants from './components/quadrants';
+
 import '../styles/main.scss';
-import printToDom from './components/quadrants';
 
 const init = () => {
-  printToDom();
+  quadrants.printToDom();
 };
 
 init();

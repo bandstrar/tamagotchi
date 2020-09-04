@@ -1,13 +1,13 @@
-import printEat from './eat';
-import printFight from './fight';
-import printPlay from './play';
-import printSleep from './sleep';
+import eat from './eat';
+import play from './play';
+import fight from './fight';
+import sleep from './sleep';
 
 const printToDom = () => {
-  printEat();
-  printPlay();
-  printFight();
-  printSleep();
+  eat.printEat();
+  play.printPlay();
+  fight.printFight();
+  sleep.printSleep();
 };
 
 export default { printToDom };
