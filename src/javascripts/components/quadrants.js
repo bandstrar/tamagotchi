@@ -6,9 +6,9 @@ const printToDom = () => {
 
     $(`#${quadrant.name}`).html(
       `<div id="${quadrant.name}Container" class="container ${quadrant.name}-container">
-        <h2 id="${quadrant.name}Name" class="header ${quadrant.name}-header">${firstCaseUpper}</h2>
-        <div id="${quadrant.name}Number" class="number-value">${quadrant.value}</div>
-        <div id="${quadrant.name}ButtonContainer">
+        <h1 id="${quadrant.name}Name" class="header ${quadrant.name}-header">${firstCaseUpper}</h1>
+        <h2 id="${quadrant.name}Number" class="number-value">${quadrant.value}</h2>
+        <div id="${quadrant.name}ButtonContainer" class="button-container">
             <button type="button" id="${quadrant.name}Button1" class="button ${quadrant.name}-button">${quadrant.button1Name}</button>
             <button type="button" id="${quadrant.name}Button2" class="button ${quadrant.name}-button">${quadrant.button2Name}</button>
         </div>

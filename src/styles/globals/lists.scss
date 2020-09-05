@@ -3,4 +3,11 @@ $quadrant-list: (
     (play, $play),
     (fight, $fight),
     (sleep, $sleep)
-)
+);
+
+$button-list: (
+    (eat, $eatButton),
+    (play, $playButton),
+    (fight, $fightButton),
+    (sleep, $sleepButton)
+);
