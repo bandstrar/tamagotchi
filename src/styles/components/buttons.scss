@@ -1,0 +1,18 @@
+%button {
+    margin: 10px;
+    width: 150px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@each $button, $button-color in $button-list {
+.#{$button}-button {
+    @extend %button;
+    background-color: $button-color;
+    color: lighten($button-color, 70%);
+};
+}
