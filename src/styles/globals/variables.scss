@@ -1,9 +1,9 @@
-$eatQuadrant: #8B5155;
-$playQuadrant: #A39E64;
-$fightQuadrant: #C4A973;
-$sleepQuadrant: #BCCBAD;
+$eat: #8B5155;
+$play: #A39E64;
+$fight: #C4A973;
+$sleep: #BCCBAD;
 
-$eatQuadrantButton: darken($eatQuadrant, 10%);
-$playQuadrantButton: darken($playQuadrant, 10%);
-$fightQuadrantButton: darken($fightQuadrant, 10%);
-$sleepQuadrantButton: darken($sleepQuadrant, 10%);
+$eatButton: darken($eat, 10%);
+$playButton: darken($play, 10%);
+$fightButton: darken($fight, 10%);
+$sleepButton: darken($sleep, 10%);

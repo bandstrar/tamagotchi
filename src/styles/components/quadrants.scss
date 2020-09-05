@@ -1,0 +1,15 @@
+%quadrantBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 376.5px;
+    width: 767px;
+}
+
+@each $quadrant, $quadrant-color in $quadrant-list {
+    .#{$quadrant}-container {
+        @extend %quadrantBox;
+        background-color: $quadrant-color;
+    }
+}
